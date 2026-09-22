@@ -1,337 +1,59 @@
 # Командна робота
 
-## Спільні налаштування# Git-проєкт: Wedding Photographer
-
-## Опис проєкту
-
-Односторінковий сайт весільного фотографа Maria Kovalenko.
-
-Сайт дозволяє:
-
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
-
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
-- `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
-- `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
-
-## Встановлення та запуск
-
-Клонувати репозиторій:
-
-````bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію# Git-проєкт: Wedding Photographer
-
-## Опис проєкту
-
-Односторінковий сайт весільного фотографа Maria Kovalenko.
-
-Сайт дозволяє:
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
-
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
-- `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
-- `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
-
-## Встановлення та запуск
-
-Клонувати репозиторій:
+## Запуск
 
 ```bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію# Git-проєкт: Wedding Photographer
+npm install
+npm run dev
+```
 
-## Опис проєкту
-
-Односторінковий сайт весільного фотографа Maria Kovalenko.
-
-Сайт дозволяє:
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
-
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
-- `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
-- `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
-
-## Встановлення та запуск
-
-Клонувати репозиторій:
+Перевірка production-збірки:
 
 ```bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію# Git-проєкт: Wedding Photographer
+npm run build
+```
 
-## Опис проєкту
+## Структура
 
-Односторінковий сайт весільного фотографа Maria Kovalenko.
-
-Сайт дозволяє:
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
-
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
+- `src/partials` — HTML секцій;
 - `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
+- `src/js` — JavaScript-логіка;
+- `src/img` — зображення та SVG;
 - `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
+- `src/main.js` — головний JS-файл.
 
-## Встановлення та запуск
+## Git workflow
 
-Клонувати репозиторій:
+`main` захищена. Працюйте у власній гілці:
 
 ```bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію# Git-проєкт: Wedding Photographer
+git switch main
+git pull origin main
+git switch -c feature/назва-задачі
+```
 
-## Опис проєкту
-
-Односторінковий сайт весільного фотографа Maria Kovalenko.
-
-Сайт дозволяє:
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
-
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
-- `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
-- `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
-
-## Встановлення та запуск
-
-Клонувати репозиторій:
+Після роботи:
 
 ```bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію# Git-проєкт: Wedding Photographer
+git add .
+git commit -m "опис змін"
+git push -u origin feature/назва-задачі
+```
 
-## Опис проєкту
+Створіть Pull Request у `main`. Merge виконується після review та успішного `npm run build`.
 
-Односторінковий сайт весільного фотографа Maria Kovalenko.
+## Правила
 
-Сайт дозволяє:
-- переглядати інформацію про фотографа;
-- переглядати портфоліо;
-- читати відгуки клієнтів;
-- переглядати відповіді на часті запитання;
-- залишати заявку на фотосесію.
+- Один розробник — одна feature-гілка.
+- Одне завдання — один Pull Request.
+- HTML секції зберігайте у відповідному partial-файлі.
+- CSS секції зберігайте в окремому файлі `src/css/<section>.css`.
+- Використовуйте Mobile First і медіа-запити `min-width`.
+- Breakpoints: `375px`, `768px`, `1440px`.
+- Усі секції використовують спільний `.container`.
+- Спільні файли змінюйте лише після погодження з тімлідом.
 
-## Основні секції
-
-- Header
-- Hero
-- About
-- Benefits
-- Feedbacks
-- Portfolio
-- FAQ
-- Contacts
-- Footer
-- Success Modal
-
-## Технології
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- REST API
-- Swiper
-- Accordion
-- Git та GitHub
-
-## Структура проєкту
-
-- `src/partials` — HTML-розмітка окремих секцій;
-- `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка та API-запити;
-- `src/img` — зображення, іконки та SVG sprite;
-- `src/index.html` — головна сторінка;
-- `src/main.js` — головний JavaScript-файл;
-- `package.json` — залежності та команди проєкту;
-- `vite.config.js` — конфігурація Vite;
-- `CONTRIBUTING.md` — правила командної роботи.
-
-## Встановлення та запуск
-
-Клонувати репозиторій:
-
-```bash
-git clone посилання-на-репозиторій
-cd назва-репозиторію
+## Спільні файли
 
 Не видаляйте та не перейменовуйте без узгодження:
 
@@ -339,54 +61,14 @@ cd назва-репозиторію
 - `vite.config.js`;
 - `.editorconfig` і `.prettierrc.json`;
 - `src/index.html`, `src/main.js`;
-- базові CSS: `reset.css`, `base.css`, `container.css`, `styles.css`.
+- `src/css/reset.css`, `src/css/base.css`, `src/css/container.css`, `src/css/styles.css`.
 
-Загальні стилі та налаштування змінює тімлід або учасник після погодження з командою. Стилі конкретної секції зберігаються в окремому файлі `src/css/<section>.css`.
+## Зображення
 
-## Гілки
-
-- `main` містить перевірений код і захищена від прямого push.
-- Для задачі створюйте гілку від актуального `main`.
-- Для виправлення використовуйте `fix/section-name`.
-
-```bash
-git switch main
-git pull origin main
-git switch -c feature/section-name
-````
-
-## Pull Request
-
-Коміт має описувати одну завершену зміну, наприклад: `add portfolio markup` або
-`fix mobile menu`.
-
-Перед Pull Request виконайте:
-
-```bash
-npm run build
-git status
-```
-
-Merge виконується після review та успішної збірки.
-
-## Розподіл файлів
-
-- `src/partials` — HTML конкретної секції;
-- `src/css` — стилі конкретної секції;
-- `src/js` — логіка конкретної функції;
-- `src/img` — графіка та SVG sprite.
-
-Не редагуйте файли іншої секції без узгодження. Зміни спільного файлу потрібно
-описати в Pull Request і погодити з тімлідом.
-
-## Загальні правила верстки
-
-- У кожному partial-файлі на етапі підготовки залишаємо тільки один placeholder: `<p>Назва секції</p>`.
-- Реалізація секції виконується розробником у відповідному partial-файлі.
-- Усі секції використовують спільний `.container` із `src/css/container.css`.
-- Не задавати власну ширину контейнера або горизонтальні відступи окремо для кожної секції без погодження.
-- Стилі конкретної секції зберігати в окремому файлі `src/css/<section>.css`.
-- Використовувати Mobile First і медіа-запити тільки через `min-width`.
-- Основні точки перелому: `375px`, `768px`, `1440px`.
-- На mobile сторінка має працювати від `320px` без горизонтального скролу.
-- Загальні reset, типографію, кольори та контейнер змінювати тільки після погодження з тімлідом.
+- Для кожного контентного фото готуйте пару файлів: `name.jpg` і `name@2x.jpg`.
+- Зберігайте всі фото безпосередньо у `src/img` у форматі JPG.
+- Для Retina використовуйте `<picture>` або `srcset` з файлами `name.jpg` і `name@2x.jpg`.
+- Не розтягуйте фото через CSS і не використовуйте зображення низької якості.
+- Для фонових зображень підготуйте окремі desktop/mobile файли та достатню роздільну здатність для `2x`.
+- Контентні зображення повинні мати коректні `width`, `height`, `loading` та `alt`.
+- SVG-іконки зберігайте в єдиному `src/img/icons.svg` як SVG sprite.
