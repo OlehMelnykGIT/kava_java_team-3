@@ -1,0 +1,4 @@
+.modal-backdrop[hidden] { display: none; }
+.modal-backdrop { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 20px; background: rgb(0 0 0 / 50%); }
+.modal { position: relative; max-width: 520px; padding: 32px; background: #fff; }
+.modal-open, .menu-open { overflow: hidden; }
