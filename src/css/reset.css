@@ -12,8 +12,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,41 +23,8 @@ a {
   text-decoration: none;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-button,
-select {
+button {
   cursor: pointer;
-}
-
-button:disabled,
-input:disabled,
-textarea:disabled,
-select:disabled {
-  cursor: not-allowed;
-}
-
-button:disabled {
-  opacity: 0.5;
-}
-
-textarea {
-  resize: vertical;
-}
-
-:where(a, button, input, textarea, select):focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
-}
-
-:where(a[href]):hover {
-  color: var(--color-accent-hover);
 }
 
 img {
