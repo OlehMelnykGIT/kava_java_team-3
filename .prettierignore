@@ -1,0 +1,8 @@
+node_modules/
+dist/
+playwright-report/
+test-results/
+# Exported assets and the existing icon inspection page are outside formatting scope.
+src/img/
+src/public/
+src/icons-test.html
