@@ -32,9 +32,122 @@
 
   </main>
 
-  <p>Footer</p>
+  <!-- #region footer -->
 
-  <p>Success Modal</p>
+<!-- Поки без готових якірних посилань -->
+
+<footer class="page-footer" id="footer">
+  <!-- #region footer-logo -->
+  <div class="footer-logo-container">
+    <svg class="footer-logo" width="206" height="180">
+      <use href="../img/icons.svg#company-logo"></use>
+      <a class="footer-logo-link" href="#"></a>
+    </svg>
+    <p class="footer-copyright-text">
+      © 2025 Maria Kovalenko Photography. All rights reserved.
+    </p>
+  </div>
+  <!-- #endregion footer-logo -->
+
+  <!-- #region footer-nav -->
+  <div class="footer-nav-container">
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">Menu</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">Home</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">About Me</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">Benefits</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">Portfolio</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-item-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- #endregion footer-nav -->
+
+  <!-- #region footer-socials -->
+  <div class="footer-socials-container">
+    <p class="footer-follow-text">Follow Me</p>
+    <ul class="footer-socials-list">
+      <li class="footer-socials-item">
+        <svg class="social-icon" width="24" height="24">
+          <use href="../img/icons.svg#facebook"></use>
+        </svg>
+        <a
+          class="footer-socials-link"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener-noreferrer"
+          >Facebook</a
+        >
+      </li>
+      <li class="footer-socials-item">
+        <svg class="social-icon" width="24" height="24">
+          <use href="../img/icons.svg#instagram"></use>
+        </svg>
+        <a
+          class="footer-socials-link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener-noreferrer"
+          >Instagram</a
+        >
+      </li>
+      <li class="footer-socials-item">
+        <svg class="social-icon" width="24" height="24">
+          <use href="../img/icons.svg#x"></use>
+        </svg>
+        <a
+          class="footer-socials-link"
+          href="https://x.com/"
+          target="_blank"
+          rel="noopener-noreferrer"
+          >X</a
+        >
+      </li>
+    </ul>
+  </div>
+  <!-- #endregion footer-nav -->
+</footer>
+<!-- #endregion footer -->
+
+  <!-- #region modal -->
+<div class="backdrop is-open" id="modal">
+  <div class="modal">
+    <button class="close-button" type="button">
+      <svg class="close-icon" width="32" height="32">
+        <use href="../img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">Thank You for Your Inquiry!</h3>
+    <img
+      class="modal-img"
+      srcset="../img/success-content-image.jpg 1x ../success-content-image@2x.jpg 2x"
+      src="../img/success-content-image.jpg"
+      alt="An elegant and styled flat lay composition"
+      width="295"
+      height="207"
+    />
+    <p class="modal-text">
+      I have received your message and I'm so excited about your interest! I
+      will get in touch with you within 24-48 hours to discuss the details of
+      your wedding day. In the meantime, feel free to browse my portfolio or
+      follow me on Instagram for more inspiration.
+    </p>
+  </div>
+</div>
+<!-- #endregion modal -->
 
 
 </body>
