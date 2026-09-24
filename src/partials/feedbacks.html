@@ -1,8 +1,41 @@
 <section class="feedbacks" id="feedbacks" aria-labelledby="feedbacks-title">
   <div class="container">
+    <!-- Add the decorative SVG from Figma when available. -->
     <h2 class="section-title feedbacks-title" id="feedbacks-title">
-      Feedbacks
+      Words from Our Wonderful Couples
     </h2>
-    <!-- Section content and behavior will be implemented by its owner. -->
+    <p class="section-description feedbacks-text">
+      Read what the couples who entrusted us with their most precious memories
+      have to say.
+    </p>
+    <!-- Render API feedbacks as list items with a blockquote and author. -->
+    <ul class="feedbacks-list"></ul>
+    <div class="feedbacks-controls">
+      <!-- Render pagination controls after loading feedbacks. -->
+      <div class="feedbacks-pagination"></div>
+      <div class="feedbacks-arrows">
+        <button
+          class="feedbacks-prev"
+          type="button"
+          aria-label="Previous feedbacks"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#arrow-back"></use>
+          </svg>
+        </button>
+        <button
+          class="feedbacks-next"
+          type="button"
+          aria-label="Next feedbacks"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./img/icons.svg#arrow-forward"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- The section owner enables navigation once API and slider logic are ready. -->
   </div>
 </section>
