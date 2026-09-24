@@ -13,11 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Mulish:wght@400;500;600;700&display=swap"
     />
     <script type="module" crossorigin src="/kava_java_team-3/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/kava_java_team-3/assets/index-vKn2t2Ks.css">
+    <link rel="stylesheet" crossorigin href="/kava_java_team-3/assets/index-D0CUCLtv.css">
   </head>
 
   <body>
-    <p>Header</p>
+    <header class="header" id="header">
+  <div class="container">
+    <a
+      class="header-logo"
+      href="#hero"
+      aria-label="Maria Kovalenko Photography — Home"
+    >
+      <svg width="80" height="70" aria-hidden="true">
+        <use href="/kava_java_team-3/assets/icons-DIaI9_6p.svg#company-logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <ul class="header-nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="header-contact-link" href="#contacts">Book a session</a>
+    <!-- Responsive styling and mobile menu will be implemented by the header owner. -->
+  </div>
+</header>
 
 
     <main>
@@ -33,13 +55,115 @@
         <a href="#contacts" class="button button--white button--mobile-full hero-link">Book a session</a>
     </div>
 </section>
-      <p>About</p>
+      <section class="about" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <!-- Add the decorative SVG from Figma when it is available in the sprite. -->
+    <h2 class="section-title about-title" id="about-title">
+      Meet Maria Kovalenko: Your Partner in Capturing Unforgettable Wedding
+      Moments
+    </h2>
+    <p class="section-description about-text">
+      With years of experience in wedding photography, Maria specializes in
+      capturing genuine emotions and beautiful moments. Her unique approach
+      blends artistry with a personal touch, ensuring that each couple's story
+      is told through stunning imagery.
+    </p>
+    <img
+      class="about-image"
+      src="/kava_java_team-3/assets/portfolio-wedding-couple-confetti-Ckxjbuce.jpg"
+      srcset="/kava_java_team-3/assets/portfolio-wedding-couple-confetti-Ckxjbuce.jpg 1x, /kava_java_team-3/assets/portfolio-wedding-couple-confetti@2x-Dqrsi5s9.jpg 2x"
+      alt="A smiling newlywed couple surrounded by confetti outside their wedding venue"
+      width="1024"
+      height="596"
+      loading="lazy"
+    />
+  </div>
+</section>
 
-      <p>Benefits</p>
+      <section class="benefits" id="benefits" aria-labelledby="benefits-title">
+  <div class="container">
+    <!-- Add the decorative SVG from Figma when available. -->
+    <h2 class="section-title benefits-title" id="benefits-title">
+      Capture Every Moment with Our Tailored Wedding Photography Packages
+    </h2>
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <!-- Champagne glasses illustration: add the matching Figma asset when available. -->
+        <h3 class="benefits-item-title">
+          Your Perfect Story: A Package Tailored for You.
+        </h3>
+        <p class="benefits-item-text">
+          Explore our collection of wedding packages, each designed to perfectly
+          capture the uniqueness of your special day.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <!-- Camera illustration: add the matching Figma asset when available. -->
+        <h3 class="benefits-item-title">
+          From Dawn to Stars: Your Full Day in Frame.
+        </h3>
+        <p class="benefits-item-text">
+          Capture every emotion, from the morning preparations to the grand
+          finale of your wedding celebration.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <!-- Church illustration: add the matching Figma asset when available. -->
+        <h3 class="benefits-item-title">
+          Precious Moments: Capturing Your Key Events.
+        </h3>
+        <p class="benefits-item-text">
+          Perfect for preserving the most important moments of your intimate
+          ceremony or smaller celebration.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-      <p>Feedbacks</p>
+      <section class="feedbacks" id="feedbacks" aria-labelledby="feedbacks-title">
+  <div class="container">
+    <!-- Add the decorative SVG from Figma when available. -->
+    <h2 class="section-title feedbacks-title" id="feedbacks-title">
+      Words from Our Wonderful Couples
+    </h2>
+    <p class="section-description feedbacks-text">
+      Read what the couples who entrusted us with their most precious memories
+      have to say.
+    </p>
+    <!-- Render API feedbacks as list items with a blockquote and author. -->
+    <ul class="feedbacks-list"></ul>
+    <div class="feedbacks-controls">
+      <!-- Render pagination controls after loading feedbacks. -->
+      <div class="feedbacks-pagination"></div>
+      <div class="feedbacks-arrows">
+        <button
+          class="feedbacks-prev"
+          type="button"
+          aria-label="Previous feedbacks"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="/kava_java_team-3/assets/icons-DIaI9_6p.svg#arrow-back"></use>
+          </svg>
+        </button>
+        <button
+          class="feedbacks-next"
+          type="button"
+          aria-label="Next feedbacks"
+          disabled
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="/kava_java_team-3/assets/icons-DIaI9_6p.svg#arrow-forward"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- The section owner enables navigation once API and slider logic are ready. -->
+  </div>
+</section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
   <div class="container">
     <h2 class="portfolio-title">Portfolio Highlights</h2>
     <ul class="portfolio-category-list"></ul>
@@ -48,7 +172,53 @@
   </div>
 </section>
 
-      <p>FAQ</p>
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <!-- Add the decorative SVG from Figma when available. -->
+    <h2 class="section-title faq-title" id="faq-title">
+      Frequently Asked Questions
+    </h2>
+    <p class="section-description faq-text">
+      Here I've gathered answers to the most popular questions to help you plan
+      your perfect day. If you can't find the information you're looking for,
+      please get in touch!
+    </p>
+    <!-- Static questions for now. Add verified answers and accordion controls together. -->
+    <ul class="faq-list">
+      <li class="faq-item">
+        <h3 class="faq-question">
+          How do we book our date and how far in advance should we do it?
+        </h3>
+        <!-- Answer text is not visible in the supplied screenshots. -->
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-question">
+          We don't know how to pose and feel awkward in front of the camera. Do
+          you help with that?
+        </h3>
+        <!-- Answer text is not visible in the supplied screenshots. -->
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-question">
+          When will we receive our photos and how many will there be?
+        </h3>
+        <!-- Answer text is not visible in the supplied screenshots. -->
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-question">
+          What is typically included in your wedding packages?
+        </h3>
+        <!-- Answer text is not visible in the supplied screenshots. -->
+      </li>
+      <li class="faq-item">
+        <h3 class="faq-question">
+          Do you travel for weddings outside of Berlin?
+        </h3>
+        <!-- Answer text is not visible in the supplied screenshots. -->
+      </li>
+    </ul>
+  </div>
+</section>
 
       <section class="contacts" id="contacts">
   <div class="container contacts-container">
@@ -230,32 +400,42 @@
 </footer>
 <!-- #endregion footer -->
 
-    <!-- #region modal -->
-<div class="backdrop is-open" id="modal">
-  <div class="modal">
-    <button class="close-button" type="button">
-      <svg class="close-icon" width="32" height="32">
-        <use href="../img/icons.svg#close"></use>
+    <div class="modal-backdrop" id="modal">
+  <div
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="success-modal-title"
+    tabindex="-1"
+  >
+    <button class="modal-close" type="button" aria-label="Close success modal">
+      <svg width="24" height="24" aria-hidden="true">
+        <use href="/kava_java_team-3/assets/icons-DIaI9_6p.svg#close"></use>
       </svg>
     </button>
-    <h3 class="modal-title">Thank You for Your Inquiry!</h3>
-    <img
-      class="modal-img"
-      srcset="../img/success-content-image.jpg 1x ../success-content-image@2x.jpg 2x"
-      src="../img/success-content-image.jpg"
-      alt="An elegant and styled flat lay composition"
-      width="295"
-      height="207"
-    />
-    <p class="modal-text">
-      I have received your message and I'm so excited about your interest! I
-      will get in touch with you within 24-48 hours to discuss the details of
-      your wedding day. In the meantime, feel free to browse my portfolio or
-      follow me on Instagram for more inspiration.
-    </p>
+    <div class="modal-content">
+      <h2 class="modal-title" id="success-modal-title">
+        Thank You for Your Inquiry!
+      </h2>
+      <img
+        class="modal-img"
+        sizes="(min-width: 768px) 640px, (max-width: 374px) calc(100vw - 80px), 295px"
+        src="/kava_java_team-3/assets/success-content-image-CsJ5YOxl.jpg"
+        srcset="/kava_java_team-3/assets/success-content-image-CsJ5YOxl.jpg 295w, /kava_java_team-3/assets/success-content-image@2x-CFFlSVgF.jpg 590w"
+        alt="Coffee, handwritten stationery and wedding photographs on light linen"
+        width="295"
+        height="207"
+        loading="eager"
+      />
+      <p class="modal-text">
+        I have received your message and I'm so excited about your interest! I
+        will get in touch with you within 24-48 hours to discuss the details of
+        your wedding day. In the meantime, feel free to browse my portfolio or
+        follow me on Instagram for more inspiration.
+      </p>
+    </div>
   </div>
 </div>
-<!-- #endregion modal -->
 
 
   </body>
