@@ -1,1 +1,12 @@
 /* Portfolio section styles. Shared rules are in common.css. */
+
+/* Preserve existing section spacing independently of .container. */
+.portfolio {
+  padding-block: 64px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .portfolio {
+    padding-block: 92px;
+  }
+}

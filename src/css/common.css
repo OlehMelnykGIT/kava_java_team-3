@@ -1,4 +1,4 @@
-/* Section spacing (top/bottom) comes from .container — see container.css. */
+/* Shared components only. Section spacing belongs in section CSS. */
 
 /* Only shared, confirmed typography. Sizes belong to the section until verified. */
 .section-title {
@@ -38,19 +38,11 @@
   text-decoration: underline;
 }
 
-.hero {
-  padding-block: 32px;
-}
-
 .button--mobile-full {
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  .hero {
-    padding-block: 0;
-  }
-
   .button--mobile-full {
     width: auto;
   }
