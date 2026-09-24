@@ -62,6 +62,6 @@
 /* Desktop section spacing from the agreed shared layout. */
 @media only screen and (min-width: 1440px) {
   .section {
-    padding-block: 112px;
+    padding-block: 92px;
   }
 }
