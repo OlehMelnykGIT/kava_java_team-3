@@ -17,7 +17,7 @@ npm run build
 
 - `src/partials` — HTML секцій;
 - `src/css` — стилі секцій;
-- `src/js` — JavaScript-логіка;
+- `src/js` — JavaScript-логіка (створюється за потреби);
 - `src/img` — зображення та SVG;
 - `src/index.html` — головна сторінка;
 - `src/main.js` — головний JS-файл.
@@ -40,7 +40,8 @@ git commit -m "опис змін"
 git push -u origin feature/назва-задачі
 ```
 
-Створіть Pull Request у `main`. Merge виконується після review та успішного `npm run build`.
+Створіть Pull Request у `main`. Merge виконується після review та успішного
+`npm run build`.
 
 ## Правила
 
@@ -53,22 +54,78 @@ git push -u origin feature/назва-задачі
 - Усі секції використовують спільний `.container`.
 - Спільні файли змінюйте лише після погодження з тімлідом.
 
+## Контейнер і відступи секцій
+
+`.container` задає ширину і всі відступи секції — і зверху/знизу, і з боків.
+Вони змінюються автоматично на кожному breakpoint:
+
+| Пристрій          | `max-width` | `padding`   |
+| ----------------- | ----------- | ----------- |
+| Mobile            | `375px`     | `64px 20px` |
+| Tablet (768px+)   | `768px`     | `64px 32px` |
+| Desktop (1440px+) | `1440px`    | `92px 64px` |
+
+- Не додавайте секції власний `padding` — його вже дає `.container`.
+- Якщо макет секції має інші відступи, перевизначте їх у файлі секції:
+  `.hero .container { padding-block: 32px; }`.
+
+```html
+<section class="contacts" id="contacts">
+  <div class="container">...</div>
+</section>
+```
+
+## CSS-змінні
+
+- Кольори, шрифти та анімації беріть зі змінних у `src/css/base.css` (`:root`).
+- Не хардкодьте кольори: `var(--color-text)` замість `#000000`.
+- Нову змінну додавайте в `base.css` тільки після погодження з тімлідом.
+- Для hover/focus використовуйте спільну анімацію:
+  `transition: color var(--transition);`
+
+## Іконки
+
+- Усі іконки — у спрайті `src/img/icons.svg`.
+- Шлях рахується від `src/index.html`, тому завжди `./img/icons.svg#id`, а не
+  `../img/...`.
+- Колір іконки задається через CSS (`fill` або `color`), бо в спрайті
+  `currentColor`.
+
+```html
+<svg class="contacts-icon" width="24" height="24" aria-hidden="true">
+  <use href="./img/icons.svg#mail"></use>
+</svg>
+```
+
+## Форматування
+
+- Встановіть рекомендовані розширення VS Code (Prettier, EditorConfig) — VS Code
+  запропонує їх сам.
+- Перед комітом відформатуйте свої файли: `npm run format`.
+- Кожен PR автоматично перевіряється збіркою (`npm run build`) у GitHub Actions.
+
 ## Спільні файли
 
 Не видаляйте та не перейменовуйте без узгодження:
 
 - `package.json` і `package-lock.json`;
 - `vite.config.js`;
-- `.editorconfig` і `.prettierrc.json`;
+- `.editorconfig`, `.prettierrc.json`, `.gitattributes`;
+- `.github/`;
 - `src/index.html`, `src/main.js`;
-- `src/css/reset.css`, `src/css/base.css`, `src/css/container.css`, `src/css/styles.css`.
+- `src/css/reset.css`, `src/css/base.css`, `src/css/container.css`,
+  `src/css/common.css`, `src/css/styles.css`;
+- `src/img/icons.svg`.
 
 ## Зображення
 
 - Для кожного контентного фото готуйте пару файлів: `name.jpg` і `name@2x.jpg`.
 - Зберігайте всі фото безпосередньо у `src/img` у форматі JPG.
-- Для Retina використовуйте `<picture>` або `srcset` з файлами `name.jpg` і `name@2x.jpg`.
+- Для Retina використовуйте `<picture>` або `srcset` з файлами `name.jpg` і
+  `name@2x.jpg`.
 - Не розтягуйте фото через CSS і не використовуйте зображення низької якості.
-- Для фонових зображень підготуйте окремі desktop/mobile файли та достатню роздільну здатність для `2x`.
-- Контентні зображення повинні мати коректні `width`, `height`, `loading` та `alt`.
+- Для фонових зображень підготуйте окремі desktop/mobile файли та достатню
+  роздільну здатність для `2x`.
+- Контентні зображення повинні мати коректні `width`, `height`, `loading` та
+  `alt`.
 - SVG-іконки зберігайте в єдиному `src/img/icons.svg` як SVG sprite.

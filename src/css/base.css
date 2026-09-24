@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Mulish:wght@400;500;600;700&display=swap");
-
+/* Fonts are connected in index.html <head>. */
 :root {
-  --font-display: "Cormorant", Georgia, serif;
-  --font-body: "Mulish", Arial, sans-serif;
+  --font-display: 'Cormorant', Georgia, serif;
+  --font-body: 'Mulish', Arial, sans-serif;
   --color-background: #fbf9f1;
   --color-white: #ffffff;
   --color-text: #000000;
   --color-accent: #dcc110;
   --color-accent-hover: #c6ab00;
+  --opacity-neutral-darkest-60: rgba(0, 0, 0, 0.6);
   --radius-large: 24px;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: var(--font-body);
   font-size: 16px;
@@ -22,13 +23,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 html {
@@ -40,7 +34,6 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  margin: 0;
 }
 
 main {
