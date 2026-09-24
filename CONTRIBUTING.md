@@ -56,14 +56,21 @@ git push -u origin feature/назва-задачі
 
 ## Контейнер і відступи секцій
 
-- `.container` задає ширину та горизонтальні відступи: `20px` / `32px` / `64px`.
-- Вертикальні відступи задає клас `.section` з `common.css`: `64px`, на desktop
-  — `92px`.
-- Не додавайте секції власний `padding` зверху/знизу, якщо він збігається з
-  `.section`.
+`.container` задає ширину і всі відступи секції — і зверху/знизу, і з боків.
+Вони змінюються автоматично на кожному breakpoint:
+
+| Пристрій          | `max-width` | `padding`   |
+| ----------------- | ----------- | ----------- |
+| Mobile            | `375px`     | `64px 20px` |
+| Tablet (768px+)   | `768px`     | `64px 32px` |
+| Desktop (1440px+) | `1440px`    | `92px 64px` |
+
+- Не додавайте секції власний `padding` — його вже дає `.container`.
+- Якщо макет секції має інші відступи, перевизначте їх у файлі секції:
+  `.hero .container { padding-block: 32px; }`.
 
 ```html
-<section class="section contacts" id="contacts">
+<section class="contacts" id="contacts">
   <div class="container">...</div>
 </section>
 ```

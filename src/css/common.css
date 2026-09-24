@@ -1,7 +1,4 @@
-/* Containers own horizontal spacing; sections own vertical spacing. */
-.section {
-  padding-block: 64px;
-}
+/* Section spacing (top/bottom) comes from .container — see container.css. */
 
 /* Only shared, confirmed typography. Sizes belong to the section until verified. */
 .section-title {
@@ -56,12 +53,5 @@
 
   .button--mobile-full {
     width: auto;
-  }
-}
-
-/* Desktop section spacing from the agreed shared layout. */
-@media only screen and (min-width: 1440px) {
-  .section {
-    padding-block: 92px;
   }
 }
